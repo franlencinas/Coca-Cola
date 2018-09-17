@@ -1,5 +1,6 @@
 package cocacolagit;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -28,30 +29,36 @@ public class Bienvenida extends JFrame implements ActionListener{
         
             System.out.println(e);
         }
-        ImageIcon imagen = new ImageIcon("images/logo-coca.png");
+        ImageIcon imagen = new ImageIcon("logo-coca.png");
         label1 = new JLabel(imagen);
         label1.setBounds(25,15,300,150);
         add(label1);
+        
        
         
         titulo = new JLabel ("Sistema de Control Vacacional");
-        titulo.setBounds(50,70,200,30);
+        titulo.setBounds(35,135,300,30);
+        titulo.setFont(new Font("Arial",3,18));
+        titulo.setForeground(new Color(255,255,250));
         add(titulo);
         
         subtitulo = new JLabel("Ingrese su nombre");
-        subtitulo.setBounds(50,140,200,20);
+        subtitulo.setBounds(45,212,200,30);
+        subtitulo.setFont(new Font("Arial",3,12));
+        subtitulo.setForeground(new Color(255,255,250));
         add(subtitulo);
         
         pie = new JLabel("©2018 The Coca-Cola Company");
-        pie.setBounds(80,400,200,10);
+        pie.setBounds(85,400,300,30);
         add(pie);
         
         nombreusuario = new JTextField ();
         nombreusuario.setBounds(50,170,200,30);
+        nombreusuario.setForeground(new Color(125,125,125));
         add(nombreusuario);
         nombreusuario.addActionListener(this);
         
-        entrada = new JButton("Aceptar");
+        entrada = new JButton("Ingresar");
         entrada.setBounds(100,300,100,30);
         add(entrada);
         nombreusuario.addActionListener(this);
