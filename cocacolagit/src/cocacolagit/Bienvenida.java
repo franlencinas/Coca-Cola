@@ -61,7 +61,7 @@ public class Bienvenida extends JFrame implements ActionListener{
         entrada = new JButton("Ingresar");
         entrada.setBounds(100,300,100,30);
         add(entrada);
-        nombreusuario.addActionListener(this);
+        entrada.addActionListener(this);
         
     }
     @Override
